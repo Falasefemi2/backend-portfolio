@@ -17,6 +17,14 @@ export const metadata: Metadata = {
     template: `%s · ${site.name}`,
   },
   description: site.tagline,
+  authors: [{ name: site.name, url: site.github }],
+  openGraph: {
+    title: `${site.name} · ${site.role}`,
+    description: site.tagline,
+    type: "website",
+    url: site.github,
+    siteName: site.name,
+  },
 }
 
 export default function RootLayout({

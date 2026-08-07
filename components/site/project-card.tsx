@@ -14,13 +14,13 @@ import type { Project } from "@/lib/content"
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <Card className="h-full flex-col justify-between transition-colors hover:bg-muted/30">
+    <Card className="h-full flex-col justify-between transition-all duration-200 hover:-translate-y-0.5 hover:bg-muted/40 hover:shadow-lg dark:hover:border-terminal/30">
       <CardHeader>
         <div className="flex items-center justify-between gap-2">
           <CardTitle className="font-medium text-foreground">
             <Link
               href={project.github}
-              className="transition-colors hover:text-terminal"
+              className="inline-block transition-colors hover:text-terminal"
             >
               {project.title}
             </Link>
@@ -48,18 +48,18 @@ export function ProjectCard({ project }: { project: Project }) {
         <div className="flex items-center gap-4 text-sm">
           <Link
             href={project.github}
-            className="inline-flex items-center gap-1 text-muted-foreground transition-colors hover:text-terminal"
+            className="group/link inline-flex items-center gap-1 text-muted-foreground transition-colors hover:text-terminal"
           >
             source
-            <ArrowUpRight className="size-3.5" />
+            <ArrowUpRight className="size-3.5 transition-transform duration-200 group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5" />
           </Link>
           {project.demo ? (
             <Link
               href={project.demo}
-              className="inline-flex items-center gap-1 text-muted-foreground transition-colors hover:text-terminal"
+              className="group/link inline-flex items-center gap-1 text-muted-foreground transition-colors hover:text-terminal"
             >
               {project.demoLabel ?? "live"}
-              <ExternalLink className="size-3.5" />
+              <ExternalLink className="size-3.5 transition-transform duration-200 group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5" />
             </Link>
           ) : null}
         </div>

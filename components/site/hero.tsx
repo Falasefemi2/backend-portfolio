@@ -18,7 +18,7 @@ export function Hero() {
     <section className="relative flex min-h-[calc(100svh-3.5rem)] flex-col justify-center py-16">
       <div
         aria-hidden="true"
-        className="terminal-grid pointer-events-none absolute inset-0 -z-10 opacity-40 [mask-image:radial-gradient(ellipse_at_top,black,transparent_70%)]"
+        className="terminal-grid pointer-events-none absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_at_top,black,transparent_70%)] opacity-40"
       />
       <div className="flex flex-col gap-8">
         <p
@@ -34,7 +34,9 @@ export function Hero() {
           </span>
         </p>
 
-        <h1 className={`${riseSteps[1]} text-4xl font-semibold tracking-tight text-foreground sm:text-6xl`}>
+        <h1
+          className={`${riseSteps[1]} text-4xl font-semibold tracking-tight text-foreground sm:text-6xl`}
+        >
           {site.name}
           <span
             aria-hidden="true"
@@ -49,12 +51,20 @@ export function Hero() {
         </p>
 
         <div className={`${riseSteps[3]} flex flex-wrap gap-3`}>
-          <Button render={<Link href={site.github} />} variant="default" nativeButton={false}>
+          <Button
+            render={<Link href={site.github} />}
+            variant="default"
+            nativeButton={false}
+          >
             <GithubIcon className="size-4" />
             github
             <ArrowUpRight className="size-4" />
           </Button>
-          <Button render={<a href={`mailto:${site.email}`} />} variant="outline" nativeButton={false}>
+          <Button
+            render={<a href={`mailto:${site.email}`} />}
+            variant="outline"
+            nativeButton={false}
+          >
             <Mail className="size-4" />
             email
           </Button>

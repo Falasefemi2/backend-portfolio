@@ -10,13 +10,16 @@ export function Experience() {
           <li key={`${job.company}-${job.period}`} className="relative">
             <span
               aria-hidden="true"
-              className="absolute -left-[31px] top-1.5 size-2.5 rounded-full border border-terminal bg-background"
+              className="absolute top-1.5 -left-[31px] size-2.5 rounded-full border border-terminal bg-background"
             />
             <div className="flex flex-col gap-1">
               <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
                 <p className="text-base font-medium text-foreground">
                   {job.role}
-                  <span className="text-muted-foreground"> @ {job.company}</span>
+                  <span className="text-muted-foreground">
+                    {" "}
+                    @ {job.company}
+                  </span>
                 </p>
                 <p className="text-sm text-muted-foreground">{job.period}</p>
               </div>

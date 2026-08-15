@@ -1,7 +1,8 @@
 export const site = {
   name: "Falase Femi",
   role: "Backend Developer",
-  tagline: "Backend engineer building reliable systems with TypeScript, Bun, and the Effect-TS ecosystem.",
+  tagline:
+    "Backend engineer building reliable systems with TypeScript, Bun, and the Effect-TS ecosystem.",
   email: "femifalase228@gmail.com",
   github: "https://github.com/Falasefemi2",
   githubHandle: "Falasefemi2",
@@ -31,7 +32,15 @@ export const projects: Project[] = [
     title: "EasyRent",
     description:
       "A scalable house rental platform for the Nigerian market with map-based, geospatial property discovery. Landlords publish listings while tenants search by location on an interactive map. Built on Effect-TS v4 and Bun, with Drizzle ORM and PostGIS powering the geospatial queries, Redis for caching, and Cloudinary + Resend handling media and transactional email.",
-    tags: ["Effect-TS v4", "Bun", "Drizzle ORM", "PostGIS", "Redis", "Cloudinary", "Resend"],
+    tags: [
+      "Effect-TS v4",
+      "Bun",
+      "Drizzle ORM",
+      "PostGIS",
+      "Redis",
+      "Cloudinary",
+      "Resend",
+    ],
     github: "https://github.com/Falasefemi2/easyrent",
     demo: "https://used-odilia-femmieorg-e85b92f9.koyeb.app/docs",
     demoLabel: "API docs",
@@ -56,7 +65,7 @@ export const projects: Project[] = [
     slug: "daily-report",
     title: "daily-report",
     description:
-      "A local daemon and CLI that tracks active apps and windows throughout the day, aggregates the raw usage into a structured summary, and generates a short narrative \"what I did today\" report via a free LLM API — personal time tracking that reads like a changelog.",
+      'A local daemon and CLI that tracks active apps and windows throughout the day, aggregates the raw usage into a structured summary, and generates a short narrative "what I did today" report via a free LLM API — personal time tracking that reads like a changelog.',
     tags: ["TypeScript", "Bun", "CLI", "LLM API"],
     github: "https://github.com/Falasefemi2/daily-report",
   },

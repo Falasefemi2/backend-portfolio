@@ -23,7 +23,10 @@ export function SiteHeader() {
           falase-femi
         </Link>
         <div className="flex items-center gap-1">
-          <nav className="hidden items-center gap-1 sm:flex" aria-label="Primary">
+          <nav
+            className="hidden items-center gap-1 sm:flex"
+            aria-label="Primary"
+          >
             {nav.map((item) => (
               <Link
                 key={item.href}

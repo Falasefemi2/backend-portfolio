@@ -51,7 +51,7 @@ export function ProjectCard({ project }: { project: Project }) {
             className="group/link inline-flex items-center gap-1 text-muted-foreground transition-colors hover:text-terminal"
           >
             source
-            <ArrowUpRight className="size-3.5 transition-transform duration-200 group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5" />
+            <ArrowUpRight className="size-3.5 transition-transform duration-200 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />
           </Link>
           {project.demo ? (
             <Link
@@ -59,7 +59,7 @@ export function ProjectCard({ project }: { project: Project }) {
               className="group/link inline-flex items-center gap-1 text-muted-foreground transition-colors hover:text-terminal"
             >
               {project.demoLabel ?? "live"}
-              <ExternalLink className="size-3.5 transition-transform duration-200 group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5" />
+              <ExternalLink className="size-3.5 transition-transform duration-200 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />
             </Link>
           ) : null}
         </div>

@@ -18,7 +18,7 @@ export function Hero() {
     <section className="relative flex min-h-[calc(100svh-3.5rem)] flex-col justify-center py-16">
       <div
         aria-hidden="true"
-        className="terminal-grid pointer-events-none absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_at_top,black,transparent_70%)] opacity-40"
+        className="terminal-grid [mask-[radial-gradient(ellipse_at_top,black,transparent_70%)] pointer-events-none absolute inset-0 -z-10 opacity-40"
       />
       <div className="flex flex-col gap-8">
         <p

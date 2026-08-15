@@ -10,7 +10,7 @@ export function Experience() {
           <li key={`${job.company}-${job.period}`} className="relative">
             <span
               aria-hidden="true"
-              className="absolute top-1.5 -left-[31px] size-2.5 rounded-full border border-terminal bg-background"
+              className="absolute top-1.5 -left-7.75 size-2.5 rounded-full border border-terminal bg-background"
             />
             <div className="flex flex-col gap-1">
               <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">

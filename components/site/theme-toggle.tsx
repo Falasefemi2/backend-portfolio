@@ -18,8 +18,8 @@ export function ThemeToggle() {
       onClick={() => setTheme(isDark ? "light" : "dark")}
     >
       <span className="relative inline-grid size-4 place-items-center">
-        <Sun className="col-start-1 row-start-1 size-4 transition-all duration-200 [transition-timing-function:cubic-bezier(0.23,1,0.32,1)] dark:scale-0 dark:-rotate-90 dark:opacity-0" />
-        <Moon className="col-start-1 row-start-1 size-4 scale-0 rotate-90 opacity-0 transition-all duration-200 [transition-timing-function:cubic-bezier(0.23,1,0.32,1)] dark:scale-100 dark:rotate-0 dark:opacity-100" />
+        <Sun className="col-start-1 row-start-1 size-4 transition-all duration-200 ease-[cubic-bezier(0.23,1,0.32,1)] dark:scale-0 dark:-rotate-90 dark:opacity-0" />
+        <Moon className="ease-[cubic-bezier(0.23,1,0.32,1)]`dark:scale-100 col-start-1 row-start-1 size-4 scale-0 rotate-90 opacity-0 transition-all duration-200 dark:rotate-0 dark:opacity-100" />
       </span>
     </Button>
   )

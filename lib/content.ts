@@ -77,6 +77,13 @@ export const projects: Project[] = [
     tags: ["Go", "CLI", "LLM API"],
     github: "https://github.com/Falasefemi2/golang-update",
   },
+  {
+    slug: "portal",
+    title: "portal",
+    description: "A local first Vercel- style deploy platform. Point it a local GitHub repo or Github URL and it detects the project type, installs dependecies, builds, packages te output, uploads the artifacts to Supabase Storage, and serves it locally through a Postgres-backed deploy registry - an exercise in building a deployed pipelines as a Bun + Effect-TS (v4) CLI and HTTP sever",
+    tags: ["Bun", "Effect", "CLI"],
+    github: "https://github.com/Falasefemi2/portal",
+  },
 ]
 
 export const featuredProjects = projects.slice(0, 3)
